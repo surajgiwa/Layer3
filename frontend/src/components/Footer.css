@@ -1,0 +1,85 @@
+/* Footer Styles */
+footer {
+    background-color: #007bff;;
+    color: #fff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Ensure headings are aligned */
+    gap: 20px; /* Reduce space between articles */
+}
+
+footer article {
+    flex: 1;
+    margin: 10px; /* Reduce margin for closer articles */
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer__socials a {
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer__socials a:hover {
+    color: orange;
+}
+
+footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+  
+}
+
+footer a:hover {
+    color: orange;
+}
+
+.footer__copyright {
+    background-color: #007bff;;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__copyright small {
+    color: #fff;
+    display: block;
+    margin: 0;
+}
+footer p {
+    margin: 10px 0; /* Add margin to separate text from logo and social icons */
+    line-height: 1.6;
+    text-align: justify; 
+}
+

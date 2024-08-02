@@ -1,0 +1,165 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f0f0f0; /* Set your desired background color */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 40px; /* Adjust based on the height of your navbar */
+  box-sizing: border-box;
+}
+
+.signin,
+.signup {
+  color: white;
+  background: rgba(48, 30, 30, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(30px);
+  animation: animateForm 1s ease forwards;
+  max-width: 350px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #333; /* Change background color of the sign-in/sign-up boxes */
+}
+.password-input {
+  position: relative;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: white;
+}
+/* Add this to your existing signin.css file */
+
+.forgot-password {
+  color: beige; /* Change this to your desired color */
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  color: yellow; /* Change this to your desired hover color */
+  text-decoration: underline;
+}
+
+
+.container h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social a {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 300ms ease;
+  background: rgba(255, 255, 255, 0.15); /* Light background for better visibility */
+}
+
+.social a i {
+  font-size: 1.5rem; /* Adjust icon size as needed */
+}
+
+.social a:hover {
+  background: white;
+  color: black;
+}
+
+p {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.container form input {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.container form input::placeholder {
+  color: white;
+}
+
+.container form input[type="submit"] {
+  background: #47d2fc;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.container form input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.container form small {
+  display: block;
+  margin-top: 1rem;
+  cursor: pointer; /* Add this line to change cursor */
+}
+
+.container form small:hover {
+  text-decoration: underline; /* Add this line to underline on hover */
+}
+
+.container form small label {
+  color: yellow;
+  cursor: pointer;
+}
+
+.signup {
+  display: none;
+}
+
+#toggle:checked ~ .signin {
+  display: none;
+}
+
+#toggle:checked ~ .signup {
+  display: block;
+}
+
+.footer {
+  margin-top: 2rem; /* Adjust margin-top if needed */
+}
+
+@keyframes animateForm {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#toggle {
+  display: none;
+  /* Hide checkbox input */
+}

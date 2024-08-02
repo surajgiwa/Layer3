@@ -1,0 +1,98 @@
+.contact__container {
+    display: grid;
+    place-items: center;
+  }
+  
+  .contact__options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 40rem; /* Add margin between options and form/prompt */
+    margin-right: 4rem; 
+   
+  }
+  
+  .contact__options a {
+    background: var(--color-primary);
+    font-size: 2rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    padding: 2rem;
+    border-radius: 1.5rem;
+  }
+  
+  .contact__options a:hover {
+    background: transparent;
+    border-color: var(--color-gray-100);
+  }
+  
+  .contact__form,
+  .contact__prompt {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .contact__form h2,
+  .contact__prompt p {
+    text-align: center;
+  }
+  
+  .contact__form label {
+    font-weight: bold;
+  }
+  
+  .contact__form input,
+  .contact__form textarea,
+  .contact__prompt button {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact__form textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .contact__form button,
+  .contact__prompt button {
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .contact__form button:hover,
+  .contact__prompt button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries for Small Screens */
+  @media screen and (max-width: 600px) {
+    .contact__options {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    .contact__options a {
+      padding: 1rem;
+      font-size: 1.2rem;
+      border-radius: 1rem;
+    }
+  
+    .contact__form,
+    .contact__prompt {
+      max-width: 100%; /* Adjust form/prompt width for small screens */
+      padding: 0 1rem; /* Adjust padding as needed */
+    }
+  }
+  

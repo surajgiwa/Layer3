@@ -1,0 +1,94 @@
+/* src/components/applicantForm.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f0f0f5; /* Light background color for the whole page */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  
+}
+
+
+.form-container {
+  color: white;
+  background: rgba(48, 30, 30, 0.8); /* Darker background for better visibility */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px); /* Reduced blur effect for better readability */
+  animation: animateForm 1s ease forwards;
+  max-width: 600px; /* Increased width for better form layout */
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5%; /* Center the form vertically and horizontally */
+  
+}
+
+.form-container h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-container form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center form items vertically */
+}
+
+.form-container form input,
+.form-container form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.form-container form input::placeholder,
+.form-container form textarea::placeholder {
+  color: white;
+}
+
+.form-container form input[type="submit"] {
+  background: #47d2fc;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.form-container form input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.form-container form small {
+  display: block;
+  margin-top: 1rem;
+}
+
+.form-container form small label {
+  color: yellow;
+  cursor: pointer;
+}
+
+.upload-label {
+  display: block;
+  margin-top: 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+@keyframes animateForm {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

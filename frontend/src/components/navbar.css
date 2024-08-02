@@ -1,0 +1,93 @@
+/* Navbar component styles */
+/* styles.css or variables.css */
+
+:root {
+    --color-primary: #3498db; /* Example primary color */
+    --color-secondary: #e74c3c; /* Example secondary color */
+    --color-gray-100: #999; /* Example gray color */
+    --color-remita: white; /* Example custom color for Sign In */
+    --color-signup: white; /* Example custom color for Request a Demo */
+    /* Add more custom colors as needed */
+}
+
+/* Navbar component styles */
+#mainMenu {
+    background-color: var(--color-primary); /* Customize to your primary color */
+    height: 5rem;
+    padding: 0; /* Remove default padding */
+}
+
+.main-menu {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    height: 100%;
+}
+
+.main-menu .container {
+    display: flex;
+    justify-content: space-between; /* Adjust for space between logo and menu */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    padding: 0 1rem; /* Adjust padding for better spacing */
+}
+
+.main-menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li {
+    margin-left: 1rem; /* Adjust margin between menu items */
+}
+
+.main-menu a {
+    color: var(--color-gray-100); /* Customize link color */
+    text-decoration: none; /* Remove default underline */
+    padding: 1rem; /* Adjust padding for better spacing */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-label-signup {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px; /* Adjust border-radius for roundness */
+    background-color: orange; /* Initial background color */
+    color: black; /* Text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    text-decoration: none; /* Remove underline */
+}
+
+.nav-label-signup:hover {
+    background-color: var(--color-secondary); /* Background color on hover */
+    color: black; /* Text color on hover */
+}
+
+.main-menu a:hover {
+    color: var(--color-secondary); /* Customize hover color */
+}
+
+.label-nav-remita {
+    color: var(--color-remita); /* Customize Sign In text color */
+}
+
+.label-nav-signup {
+    color: black; /* Customize Request a Demo text color */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+}
+
+.logo-img {
+    
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 5px;
+    
+}

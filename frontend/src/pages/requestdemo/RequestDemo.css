@@ -1,0 +1,119 @@
+/* RequestDemo.css */
+
+/* Page structure */
+.page-template-default {
+  font-family: Arial, sans-serif;
+}
+
+/* Main content */
+#request-demo-main {
+  padding: 80px 0;
+}
+#brx-content {
+  padding-left: 30px; /* Add padding to the left of the main content */
+  padding-right: 30px; /* Add padding to the right of the main content */
+}
+
+#hero-section {
+  background-color: #0c011a;
+  padding: 20px;
+}
+
+#demo-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#demo-form {
+  width: 45%;
+  background-color: #f7f7f7;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 5%;
+  flex: 1 0 45%;
+}
+
+#connect-section {
+  width: 45%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 5%;
+  flex: 1 0 45%;
+}
+
+#demo-header {
+  margin-bottom: 20px;
+}
+
+#role-container {
+  margin-bottom: 20px;
+}
+
+#role-select-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#jobseeker-info {
+  margin-top: 20px;
+}
+
+#company-info .form-group {
+  margin-bottom: 20px;
+}
+
+#work-email,
+#country {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#connect-section {
+  padding: 20px;
+  background-color: #f2f2f2;
+  flex: 1 0 45%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#connect-content {
+  margin-bottom: 20px;
+}
+
+#connect-details {
+  margin-top: 20px;
+}
+
+#company-info .btn-primary {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+#company-info .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  #demo-container {
+    flex-direction: column;
+  }
+
+  #demo-form,
+  #connect-section {
+    flex: 1 0 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

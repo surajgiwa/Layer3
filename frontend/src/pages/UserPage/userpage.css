@@ -1,0 +1,94 @@
+/* src/pages/User/userpage.css */
+
+.user-container {
+    padding: 2rem;
+    background-color: #f0f0f0; /* Light grey color */
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto; /* Adjusted margin to center content and provide space */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items horizontally */
+    position: relative; /* Added to ensure no absolute positioning issues */
+    border: 2px solid green; /* Temporary border for debugging */
+}
+
+.welcome-box {
+    background-color: #007bff; /* Blue background color */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem; /* Added margin for separation */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    width: fit-content; /* Adjust width to fit content */
+    margin: 0 auto; /* Center align the box */
+}
+
+.actions {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space evenly between items */
+    width: 100%; /* Full width */
+    max-width: 800px; /* Limit maximum width */
+    gap: 1rem; /* Add some space between buttons */
+    padding: 0.8rem 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none; /* Removed border */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none; /* Ensure links look clickable */
+    flex: 1; /* Ensure buttons take equal space */
+    text-align: center; /* Center text inside button */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.sign-out-btn {
+    padding: 0.5rem 1rem;
+    background-color: #ff4757;
+    color: white;
+    border: none; /* Removed border */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center; /* Center text inside button */
+}
+
+.sign-out-btn:hover {
+    background-color: #ff6b81;
+}
+
+.toggle-form-btn {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none; /* Removed border */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center; /* Center text inside button */
+}
+.download-btn {
+    padding: 0.5rem 1rem;
+    background-color:#007bff;
+    color: white;
+    border: none; /* Removed border */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center; 
+}
+
+.toggle-form-btn:hover,
+.download-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.error {
+    color: red;
+    margin-top: 20px;
+}
